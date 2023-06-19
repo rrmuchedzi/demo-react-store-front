@@ -15,8 +15,7 @@
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
     "prettier": "$(npm bin)/prettier --write \"**/*.{ts,tsx}\"",
-    "prettier-check": "npx prettier@2.5.0 --check \"**/*.{ts,tsx}\"",
-    "prepare": "husky install"
+    "prettier-check": "npx prettier@2.5.0 --check \"**/*.{ts,tsx}\""
   },
   "eslintConfig": {
     "extends": [
@@ -62,10 +61,6 @@
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {
-    "@testing-library/dom": "^9.2.0",
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
     "@alex_neo/jest-expect-message": "1.0.5",
     "@storybook/addon-actions": "^6.5.16",
     "@storybook/addon-essentials": "^6.5.16",
@@ -77,6 +72,10 @@
     "@storybook/preset-create-react-app": "^4.1.2",
     "@storybook/react": "^6.5.16",
     "@storybook/testing-library": "^0.0.13",
+    "@testing-library/dom": "^9.2.0",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
     "@types/jest": "29.2.5",
     "@types/jest-expect-message": "1.0.4",
     "@types/react-lazy-load-image-component": "^1.5.2",
@@ -88,10 +87,9 @@
     "eslint-plugin-jsdoc": "^40.1.0",
     "eslint-plugin-storybook": "^0.6.11",
     "eslint-plugin-unused-imports": "^2.0.0",
-    "husky": "7.0.4",
     "jest": "29.3.1",
     "jest-environment-jsdom": "29.4.1",
-    "prettier": "2.5.0",
+    "prettier": "^2.8.8",
     "pretty-quick": "3.1.2",
     "prop-types": "^15.8.1",
     "storybook-react-router": "^1.0.8",
@@ -111,10 +109,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged"
-    }
   }
 }
